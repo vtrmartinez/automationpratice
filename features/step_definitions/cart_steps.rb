@@ -7,8 +7,9 @@ end
   
 Quando('realizar o checkout') do
     CreateAccount.new.create_new_account
+    Cart.new.finish_cart
 end
 
 Então('verei a confirmação do pedido') do
-    pending # Write code here that turns the phrase above into concrete actions
+    Cart.new.verify_order
 end
