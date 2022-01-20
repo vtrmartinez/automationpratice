@@ -7,11 +7,15 @@ require 'faker'
 
 World(Capybara::DSL)
 
-Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, browser: :chrome)
+Capybara.configure do |config|
+  # :selenium_chrome_headless -> execução em headless do chrome sem abrir o navegador
+  # :selenium_chrome -> execução do chrome levantando o navegador
+  # :selenium -> execução do firefox levantando o navegador
+  # :selenium_headless -> execução do firefox em headless
+  config.default_driver = :selenium_chrome
 end
 
-Capybara.current_driver = :selenium
+
 Capybara.page.driver.browser.manage.window.maximize
 Capybara.default_max_wait_time = 10
 
