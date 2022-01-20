@@ -8,14 +8,14 @@ Funcionalidade: Automation Pratice
 
 @search
 Cenário: Encontrar um produto
-    Dado que eu esteja na home do site AutomationPratice
-    Quando eu buscar pelo conteúdo "Faded Short Sleeve"
+    Dado que o usuário esteja na home do site AutomationPratice
+    Quando buscar pelo conteúdo "Faded Short Sleeve"
     E abrir o primeiro produto
-    Então verei os detalhes do produto
+    Então verá os detalhes do produto
 
 @cart
 Cenário: Realizar uma compra
-    Dado que eu esteja na home do site AutomationPratice
-    Quando eu adicionar um produto no carrinho
+    Dado que o usuário esteja na home do site AutomationPratice
+    Quando adicionar um produto no carrinho
     E realizar o checkout
-    Então verei a confirmação do pedido
+    Então verá a confirmação do pedido
