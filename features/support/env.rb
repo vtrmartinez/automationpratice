@@ -3,6 +3,7 @@ require 'yaml'
 require 'selenium/webdriver'
 require 'capybara/dsl'
 require 'pry'
+require 'faker'
 
 World(Capybara::DSL)
 
