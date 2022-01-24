@@ -43,11 +43,15 @@ Instalação e configuração, para executar os testes, usando capybara e cucumb
 * Para rodar apenas o cenário de checkout
 
 		$ cucumber -t @cart
+		
+		
+## Gerar Relatório
+
+		$ cucumber --format html --out reports.html	
+		
     
 ## Importante
 No arquivo .env é possível configurar com qual motor você deseja rodar os testes. Isto é, utilizando chrome, firefox ou headless.
 
 
-## Gerar Relatório
 
-		$ cucumber --format html --out reports.html
